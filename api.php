@@ -21,6 +21,26 @@ function get_messages($conn,$from,$to,$since) {
   return $result;
 }
 
+function get_user_by_id($id) {
+  $conn = new PDO($GLOBALS["dsn"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["options"]);
+  $q = $conn->prepare("SELECT * FROM `users` where id = ?");
+  $q->execute(array($id));
+
+  $result = $q->fetchAll(PDO::FETCH_ASSOC);
+
+  return $result;
+}
+
+function get_user_by_name($name) {
+  $conn = new PDO($GLOBALS["dsn"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["options"]);
+  $q = $conn->prepare("SELECT * FROM `users` where `name` = ?");
+  $q->execute(array($name));
+
+  $result = $q->fetchAll(PDO::FETCH_ASSOC);
+
+  return $result;
+}
+
 function get_timeline($from,$to,$since) {
   $conn = new PDO($GLOBALS["dsn"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["options"]);
   $us = implode(",", array($from,$to));
