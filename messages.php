@@ -7,16 +7,27 @@ $sender    = get_user_by_name($_GET["username"]);
 $recipient = get_user_by_name($_GET["contact"]);
 
 function get_bubble_id($user_id) {
-  if((int)$user_id==1) {
+  if((int)$user_id==$sender["id"]) {
     return "";
   } else {
     return "2";
   }
 }
 
-$email="alex.nicolaides@witlr.com";
-$u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=80"; ?>
+function get_gravatar($email) {
+  $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=80";
+  return $u1_grav;
+}
 
+if(isset($_POST["message"])) {
+  $from_user_id = $sender["id"];
+  $recipient_user_id = $recipient["id"];
+  save_message($from_user_id,$recipient_user_id,"",$_POST["message"]);
+  header("Location: messages.php?username=" . $_POST["from_user"] . "&contact=" . $_POST["to_user"]);
+  die();
+}
+
+?>
 <!doctype html>
 
 <html lang="en-gb">
@@ -38,11 +49,45 @@ $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) )
     <div class="clearfix"></div>
     <div class="row">
       <div class="contacts large-8 large-centered columns">
+        <h1>Messages between <?php echo $_GET["username"]; ?> and <?php echo $_GET["contact"]; ?></h1>
+        <?php foreach($timeline as $msg) { ?>
+          <?php if($sender["id"] == $msg["to_user"]) { ?>
+        <div class="row">
+            <div class="large-1 columns">&nbsp;</div>
+            <div class="large-2 columns">
+              <img src="<?php echo get_gravatar($sender["email"]);?>" class="pic" width="80">
+            </div>
+            <div class= "large-8 columns">
+             <p class="bubble"><?php echo $msg["message"]; ?></p>
+            </div>
+            <div class="large-1 columns">&nbsp;</div>
+        </div>
+          <?php } else { ?>
+        <div class="row">
+            <div class="large-1 columns">&nbsp;</div>
+            <div class= "large-8 columns">
+             <p class="bubble2"><?php echo $msg["message"]; ?></p>
+            </div>
+            <div class="large-2 columns">
+              <img src="<?php echo get_gravatar($recipient["email"]);?>" class="pic" width="80">
+            </div>
+
+            <div class="large-1 columns">&nbsp;</div>
+        </div>
+        <?php  } ?>
+        <?php } ?>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="contacts large-8 large-centered columns">
         <h1>Write your message to <?php echo $_GET["contact"]; ?></h1>
-        <form>
+        <form method="post">
           <div class="row">
               <div class= "large-centered large-8 columns">
                 <textarea class="mbox" name="message" type="text" placeholder="Enter your message"></textarea>
+                <input type="hidden" name="from_user" value="<?php echo $_GET["username"]; ?>" />
+                <input type="hidden" name="to_user" value="<?php echo $_GET["contact"]; ?>" />
               </div>
           </div>
           <div class="row">
@@ -52,39 +97,6 @@ $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) )
           </div>
         </form>
       </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="row">
-      <div class="contacts large-8 large-centered columns">
-        <h1>Messages between <?php echo $_GET["username"]; ?> and <?php echo $_GET["contact"]; ?></h1>
-        <?php foreach($timeline as $msg) { ?>
-          <?php if(get_bubble_id($msg["from_user"]) == "") { ?>
-        <div class="row">
-            <div class="large-1 columns">&nbsp;</div>
-            <div class="large-2 columns">
-              <img src="<?php echo $u1_grav;?>" class="pic" width="80">
-            </div>
-            <div class= "large-8 columns">
-             <p class="bubble"> <?php echo $msg["message"]; ?></p>
-            </div>
-            <div class="large-1 columns">&nbsp;</div>
-        </div>
-          <?php } else { ?>
-        <div class="row">
-            <div class="large-1 columns">&nbsp;</div>
-            <div class= "large-8 columns">
-             <p class="bubble2"> <?php echo $msg["message"]; ?></p>
-            </div>
-            <div class="large-2 columns">
-              <img src="<?php echo $u1_grav;?>" class="pic" width="80">
-            </div>
-
-            <div class="large-1 columns">&nbsp;</div>
-        </div>
-        <?php  } ?>
-        <?php } ?>
-      </div>
-    </div>
     </div>
   </article>
   <footer class="mainfooter">
