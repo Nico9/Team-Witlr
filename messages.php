@@ -14,9 +14,12 @@ function get_bubble_id($user_id) {
   }
 }
 
-$email="alex.nicolaides@witlr.com";
-$u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=80"; ?>
+function get_gravatar($email) {
+  $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=80";
+  return $u1_grav;
+}
 
+?>
 <!doctype html>
 
 <html lang="en-gb">
@@ -62,7 +65,7 @@ $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) )
         <div class="row">
             <div class="large-1 columns">&nbsp;</div>
             <div class="large-2 columns">
-              <img src="<?php echo $u1_grav;?>" class="pic" width="80">
+              <img src="<?php echo get_gravatar($sender["email"]);?>" class="pic" width="80">
             </div>
             <div class= "large-8 columns">
              <p class="bubble"> <?php echo $msg["message"]; ?></p>
@@ -76,7 +79,7 @@ $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) )
              <p class="bubble2"> <?php echo $msg["message"]; ?></p>
             </div>
             <div class="large-2 columns">
-              <img src="<?php echo $u1_grav;?>" class="pic" width="80">
+              <img src="<?php echo get_gravatar($recipient["email"]);?>" class="pic" width="80">
             </div>
 
             <div class="large-1 columns">&nbsp;</div>

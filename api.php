@@ -28,7 +28,7 @@ function get_user_by_id($id) {
 
   $result = $q->fetchAll(PDO::FETCH_ASSOC);
 
-  return $result;
+  return $result[0];
 }
 
 function get_user_by_name($name) {
@@ -38,7 +38,7 @@ function get_user_by_name($name) {
 
   $result = $q->fetchAll(PDO::FETCH_ASSOC);
 
-  return $result;
+  return $result[0];
 }
 
 function get_timeline($from,$to,$since) {
