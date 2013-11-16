@@ -1,0 +1,436 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"employer",
+				"employer_id"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"page-recruiters-",
+				"page-recruiters-packages"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"ma",
+				"main-header"
+			],
+			[
+				"lis",
+				"list-style-image"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"page-recruiters",
+				"page-recruiters-search"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"b",
+				"border-radius"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"bar",
+				"background"
+			],
+			[
+				"get",
+				"getFullYear"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"background",
+				"background-grey"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"bottom",
+				"bottomSignUp"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"tabe",
+				"table-cell"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/about.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/home/hackathons.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/home/hackathons_dundee.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/home/hackathons_standrews.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/routes.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/controllers/home.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/admin/recruiters_info.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/public/static/css/recruiters/recruiters.css",
+		"/home/nico/witlr/www/witlr.com/httpdocs/public/static/css/about.css",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/recruiters.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/home.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/showcase.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/controllers/recruiters.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters/recruiters.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/paths.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/public.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/search.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/benefits.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/packages.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/include/base.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/jobs/create.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/advice/item.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/candidate/advice_item.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/advice/listing.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/candidate/advice.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/advice.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/libraries/advicecontroller.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/controllers/candidate.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/li_sidebar.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/libraries/advice.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/controllers/advice.php",
+		"/home/nico/myjsfile.js",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/_register-bar.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/_login-bar.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/home/home-v2.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/home/graduate-register-bar.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/include/login-bar.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/include/register-bar.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/home.less",
+		"/home/nico/bin/lesswatch",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/graduates/signup.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/graduates/about.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/home/about.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/about.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters/benefits_jobposting.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/pricing.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/benefits_jobposting.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters/pricing.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/graduates/home.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters/benefits.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters/about.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiters/faq.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiters/faq.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/fonts.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/brand.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/foundation.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiter/recruiters.blade.php",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiter/recruiters.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/src/less/recruiter/about.less",
+		"/home/nico/witlr/www/witlr.com/httpdocs/application/views/recruiter/about.blade.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"JPG",
+			"dundee",
+			"width=\"200\"",
+			"jpg",
+			"static",
+			"i",
+			"profile-picture",
+			"profile-picture-container",
+			"profile-picture-cintainer",
+			"p",
+			"h4",
+			"h3",
+			"2",
+			"end",
+			"Aggregator",
+			"\">\n",
+			"recruiters",
+			"public",
+			"hide",
+			"show",
+			"email",
+			"Helvetica",
+			"@HN",
+			" ;",
+			"\"Helevetica Neue\"",
+			"\"Helvetica Neue\"",
+			"e",
+			"Helvetica",
+			"40",
+			"http://i39.tinypic.com/25tgl80.png",
+			"logo",
+			"Sans",
+			"Helvetica",
+			"sectionHeading",
+			"60px",
+			"fcfcfc",
+			"fafafa",
+			"40",
+			"80",
+			"h4",
+			";\n",
+			"e2e2e2",
+			"plan",
+			"Information about this point goes here",
+			"point 1",
+			"recruiter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.928571428571,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"home.lss",
+				"httpdocs/src/less/home.less"
+			],
+			[
+				"route",
+				"httpdocs/application/routes.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true
+}
