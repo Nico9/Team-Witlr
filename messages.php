@@ -55,7 +55,7 @@ if(isset($_POST["message"])) {
         <div class="row">
             <div class="large-1 columns">&nbsp;</div>
             <div class="large-2 columns">
-              <img src="<?php echo get_gravatar($sender["email"]);?>" class="pic" width="80">
+              <img src="<?php echo get_gravatar($recipient["email"]);?>" class="pic" width="80">
             </div>
             <div class= "large-8 columns">
              <p class="bubble"><?php echo $msg["message"]; ?></p>
@@ -69,7 +69,7 @@ if(isset($_POST["message"])) {
              <p class="bubble2"><?php echo $msg["message"]; ?></p>
             </div>
             <div class="large-2 columns">
-              <img src="<?php echo get_gravatar($recipient["email"]);?>" class="pic" width="80">
+              <img src="<?php echo get_gravatar($sender["email"]);?>" class="pic" width="80">
             </div>
 
             <div class="large-1 columns">&nbsp;</div>
