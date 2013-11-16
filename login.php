@@ -16,7 +16,9 @@
           </a>
   </header>
   <article class="background">
-    <div class="row login"><form method="get" action="dashboard.php">
+    <div class="row login">
+      <div class="loginform">
+        <form  method="get" action="dashboard.php">
       <div class="large-12 columns clear">
         <label>Login to Witlr Messages</label>
       </div>
@@ -25,7 +27,9 @@
       </div>
       <div class="large-12 columns clear">  
         <button type="submit" class="button">Login</button>
-      </div></form>
+      </div>
+    </form>
+    </div>
     </div>
   </article>  
   <footer class="mainfooter">  

@@ -25,14 +25,14 @@ footer p{
   font-family: Arial;
 }
 .button{
-  background-color: #1589FF;
+  background-color: #ffc425;
   padding: 5px;
-  color: #fff;
+  color: #333;
   font-family: Arial;
   text-decoration: none;
   font-size: 24px;
   border-radius: 3px;
-  border: 1px solid blue;
+  border: 1px solid yellow;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -62,12 +62,19 @@ input{
 }
 label{
   font-family: Arial;
-  font-size: 24px;
-  color: #333;
+  font-size: 42px;
+  color: #fff;
 }
 .login{
   padding-top: 50px;
   padding-bottom: 250px;
+}
+.loginform{
+  background-color: #333;
+  opacity: 0.8;
+  padding: 20px;
+  width: 60%;
+  height: 250px;
 }
 .background{
   background-image: url("../img/hero.jpg");
