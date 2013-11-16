@@ -10,6 +10,7 @@ $options = array(
 );
 
 $conn = new PDO($dsn, $username, $password, $options);
+define(CONN,$conn);
 
 function get_messages($conn,$from,$to,$since) {
   $q = $conn->prepare("SELECT * FROM messages WHERE `from_user` = ? AND `to_user` = ? AND `created_at` > ?");
@@ -20,7 +21,8 @@ function get_messages($conn,$from,$to,$since) {
   return $result;
 }
 
-function get_timeline($conn,$from,$to,$since) {
+function get_timeline($from,$to,$since) {
+  $conn = new PDO($GLOBALS["dsn"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["options"]);
   $us = implode(",", array($from,$to));
   $q = $conn->prepare("SELECT * FROM messages WHERE `from_user` IN ($us) AND `to_user` IN ($us) AND `created_at` > ?");
   $q->execute(array(date("Y-m-d H:i:s",strtotime($since))));
@@ -59,7 +61,7 @@ switch($_GET["action"]) {
     $from  = (int)$_GET["from"];
     $to    = (int)$_GET["to"];
     $since = (int)$_GET["since"];
-    $result = json_encode(get_timeline($conn,$from,$to,$since));
+    $result = json_encode(get_timeline($from,$to,$since));
     break;
 }
 

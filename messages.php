@@ -1,4 +1,5 @@
 <?php 
+require("api.php");
 $email="alex.nicolaides@witlr.com";
 $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=80"; ?>
 
@@ -42,21 +43,18 @@ $u1_grav = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) )
     <div class="row">
       <div class="contacts large-8 large-centered columns">
         <h1>Messages between <?php echo $_GET["username"]; ?> and <?php echo $_GET["contact"]; ?></h1>
+        <?php foreach(get_timeline(1,2,0) as $msg) { ?>
         <div class="row">
             <div class="large-1 columns">&nbsp;</div>
             <div class="large-2 columns">
               <img src="<?php echo $u1_grav;?>" class="pic" width="80">
             </div>    
             <div class= "large-8 columns">
-             <p class="bubble">This is my message</p>
+             <p class="bubble<?php echo $GET["ID"]; ?>"> <?php echo $msg["message"]; ?></p>
             </div>
             <div class="large-1 columns">&nbsp;</div>
         </div>  
-        <div class="row">
-          <div class= "large-centered large-8 columns">
-             <p class="bubble2">This is my message</p>
-          </div>
-        </div>  
+        <?php } ?>  
       </div>    
     </div>
     </div>
