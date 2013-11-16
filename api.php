@@ -50,7 +50,8 @@ function get_timeline($from,$to,$since) {
   return $result;
 }
 
-function save_message($conn,$from,$to,$subject,$message) {
+function save_message($from,$to,$subject,$message) {
+  $conn = new PDO($GLOBALS["dsn"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["options"]);
   $q = $conn->prepare("INSERT INTO messages (`from_user`,`to_user`,`subject`,`message`,`created_at`) VALUES(?,?,?,?,?)");
   $q->execute(array($from,$to,"",$message,date("Y-m-d H:i:s")));
 
